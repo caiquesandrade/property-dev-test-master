@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Welcome to the DEV TEST</h1>
+
+    Thank you for taking part on our test
+
+    <h3>Step 1: <small>Creating Routes and Displaying elements</small></h3>
+    <ul>
+        <li>Create a page called Locations with the url "/location".</li>
+        <li>This page will have a list of all elements from <b>"Location"</b> entity.</li>
+        <li>Each element should be a link to the location page that will be created on step 2.</li>
+    </ul>
+
+    <h3>Step 2: <small>Database Query and Advanced Routes</small></h3>
+    <ul>
+        <li>Create a page for each <b>"Location"</b> using the slug as reference for the url eg. "/location/london"</li>
+        <li>Display on this page the elements from the entity <b>"Property"</b> that are within 1 mile range from the <b>"Location"</b> using the Latitude and Longitude as the measure method.</li>
+        <li>Each element should be a link to the "Property" page that will be created on step 3.</li>
+    </ul>
+
+    <h3>Step 3: <small>Forms</small></h3>
+    <ul>
+        <li>Create a page for each <b>"Property"</b> using the ID as reference for the url eg. "/property/2"</li>
+        <li>This page will show all details from the Property object plus the <b>"Enquiry"</b> objects that are related to this property</li>
+        <li>This page will have a <b>Enquire</b> form that once submitted will save to the database the enquire (message and email).</li>
+        <li>This form must have email validation and only accept valid emails.</li>
+    </ul>
+
+    <h3>Notes:</h3>
+    <ul>
+        <li>Please demonstrate familiarity with the symfony ecosystem.</li>
+        <li>Completing and implementing the services "FindLocation" and "FindProperty" is desired.</li>
+    </ul>
+
+    <h3>Entities:</h3>
+    <ul>
+        <li>Location</li>
+        <li>Enquire</li>
+        <li>Property</li>
+    </ul>
+{% endblock %}
